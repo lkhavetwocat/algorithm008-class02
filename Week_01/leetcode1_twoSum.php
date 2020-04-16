@@ -1,6 +1,6 @@
 <?php
 /*
- * @lc app=leetcode.cn id=1 lang=php
+ * app=leetcode.cn id=1 lang=php
  *
  * [1] 两数之和
  */

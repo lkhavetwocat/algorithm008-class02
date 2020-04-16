@@ -1,6 +1,6 @@
 <?php
 /*
- * @lc app=leetcode.cn id=15 lang=php
+ *  app=leetcode.cn id=15 lang=php
  *
  * [15] 三数之和
  *
