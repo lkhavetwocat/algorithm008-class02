@@ -1,5 +1,14 @@
 # week02学习笔记
 ## 理论知识
+* <a href="#hash">Hash Table</a>
+* <a href="#tree">树</a>
+* <a href="#heap">堆</a>
+* <a href="#map">图</a>
+##  算法练习
+* <a href="#hashal">HashMap相关</a>
+* <a href="#treeal">二叉树相关</a>
+* <a href="#al">面试高频</a>
+### <a id="hash">Hash Table</a>
 * Hash table：哈希表（散列表），是根据关键码值（key value）而直接进行访问的数据结构，它通过把关键码值映射到表中一个位置来访问记录，以加查找的速度。这个映射函数也叫作散列函数（Hash Function），存放记录的数组叫做哈希表（散列表），**散列表用的是数组支持按照下标随机访问数据的特性，所以散列表其实就是数组的一种扩展，由数组演化而来。可以说，如果没有数组，就没有散列表**。
   ![avatra](https://static001.geekbang.org/resource/image/92/73/92c89a57e21f49d2f14f4424343a2773.jpg)
 * 散列函数设计的基本要求
@@ -14,6 +23,7 @@
 * HashTable工程上应用
   * Map：key-value对，key不重复
   * Set：不重复元素集合
+### <a id="tree">树</a>
 * 树：如下图所示，"树"中每个元素称为节点，用来连接相邻节点的关系我们称为父子关系
   ![avatra](https://static001.geekbang.org/resource/image/b7/29/b7043bf29a253bb36221eaec62b2e129.jpg)
   * 下图中A是B的父亲节点、是E的子节点，而B、C、D互为兄弟节点
@@ -39,6 +49,7 @@
   * 中序遍历：先左->再根->再右
   * 后序遍历：先左->再右->再根
     ![avatra](https://static001.geekbang.org/resource/image/ab/16/ab103822e75b5b15c615b68560cb2416.jpg)
+### <a id="heap">堆</a>
 * 堆（Heap）的定义：可以迅速找出一堆数中最大值或者最小值的数据机构。将根节点最大的堆叫做大顶堆/大根堆，根节点最小的堆叫做小顶堆/小根堆。他是一种逻辑结构，可以有很多种实现方法，最简单的是二叉堆（Binary Heap），常见的还有斐波拉契堆、严格斐波拉契堆等等。
 * 假设是大顶堆，常见的操作（API）：
   * find-max：O(1)
@@ -69,6 +80,7 @@
     * 有向和无向（单行线）
     * 权重（边长）
       ![avatra](https://static001.geekbang.org/resource/image/df/af/df85dc345a9726cab0338e68982fd1af.jpg)
+### <a id="map">图</a>
 * 图的表示
   * 邻接矩阵表示
     * 邻接矩阵的底层依赖一个二维数组。对于无向图来说，如果顶点 i 与顶点 j 之间有边，我们就将 A[i][j]和 A[j][i]标记为 1；对于有向图来说，如果顶点 i 到顶点 j 之间，有一条箭头从顶点 i 指向顶点 j 的边，那我们就将 A[i][j]标记为 1。同理，如果有一条箭头从顶点 j 指向顶点 i 的边，我们就将 A[j][i]标记为 1。对于带权图，数组中就存储相应的权重
@@ -77,7 +89,7 @@
     ![aratra](https://static001.geekbang.org/resource/image/03/94/039bc254b97bd11670cdc4bf2a8e1394.jpg)
 * 图的DFS、BFS记住要加visited集合来记录已经访问过的节点
 ## 本周算法练习
-### HashMap相关
+### <a id="hashal">HashMap相关</a>
 * [LeetCode299 猜字游戏](https://leetcode-cn.com/problems/bulls-and-cows)
 * [LeetCode290 单词规律](https://leetcode-cn.com/problems/word-pattern)
 * [LeetCode350 两个数组的交集](https://leetcode-cn.com/problems/intersection-of-two-arrays-ii)
@@ -87,7 +99,7 @@
 * [LeetCode49 字母异位词分组](https://leetcode-cn.com/problems/group-anagrams)
 * [LeetCode1021 删除最外层的括号](https://leetcode-cn.com/problems/remove-outermost-parentheses)
 * [面试题59 - I. 滑动窗口的最大值](https://leetcode-cn.com/problems/hua-dong-chuang-kou-de-zui-da-zhi-lcof/)
-### 二叉树相关
+### <a id="treeal">二叉树相关</a>
 * [LeetCode94 二叉树的中序遍历](https://leetcode-cn.com/problems/binary-tree-inorder-traversal/)
 * [LeetCode144 二叉树的前序遍历](https://leetcode-cn.com/problems/binary-tree-preorder-traversal/)
 * [LeetCode145 二叉树的后序遍历](https://leetcode-cn.com/problems/binary-tree-postorder-traversal/)
@@ -98,7 +110,7 @@
 * [LeetCode429 N叉树的层序遍历](https://leetcode-cn.com/problems/n-ary-tree-level-order-traversal/)
 * [LeetCode559 N叉树的最大深度](https://leetcode-cn.com/problems/maximum-depth-of-n-ary-tree/)
 * [LeetCode110 平衡二叉树](https://leetcode-cn.com/problems/balanced-binary-tree/)
-### 面试高频
+### <a id="al">面试高频</a>
 * [LeetCode543 二叉树的直径](https://leetcode-cn.com/problems/diameter-of-binary-tree/)
 * [LeetCode75 颜色分类](https://leetcode-cn.com/problems/sort-colors/)
 * [LeetCode23 合并k个有序链表](https://leetcode-cn.com/problems/merge-k-sorted-lists/)
